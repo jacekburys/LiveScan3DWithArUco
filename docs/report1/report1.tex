@@ -1,0 +1,53 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage [utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.12,0.37,0.12}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+
+\lstset{frame=tb,
+  language=C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{black},
+  keywordstyle=\color{darkblue},
+  commentstyle=\color{gray},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\newcommand*\justify{%
+  \fontdimen2\font=0.4em% interword space
+  \fontdimen3\font=0.2em% interword stretch
+  \fontdimen4\font=0.1em% interword shrink
+  \fontdimen7\font=0.1em% extra space
+  \hyphenchar\font=`\-% allowing hyphenation
+}
+
+\addtolength{\hoffset}{-1,5cm}
+\addtolength{\textwidth}{3cm}
+
+\title{ Title //TODO }
+\author{ Authors //TODO }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Section 1}
+Hello
+
+\subsection*{Subsection 1.1}
+Hello
+
+\end{document}
