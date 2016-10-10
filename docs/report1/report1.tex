@@ -57,6 +57,16 @@ For this project we have decided to follow the Extreme Programming (XP) agile me
 \end{itemize}
 
 \section*{Planning}
-Hello
+We plan to divide the work into parts that need to be completed with the hardware, and parts that can be completed without. Any work that requires the Kinect sensors will need to be carried out on the appropriate lab machines, and we plan to gather as a group to discuss and delegate this work. Some work will be able to be done without the sensors, thus giving us more flexibility when it comes to organising it, as group members can complete the work in their own time. \\
+TODO: talk about requirements and how we will capture those. \\
+Speaking to our supervisor gave us some insight into the scope of the project, the programming environments needed to carry out the work, as well as suggestions helping us to put together the iteration following plan:
+\subsection*{TODO: Copied the iteration plan from email, this needs to be put into our own words}
+\subsection*{Iteration 1}
+Familiarize yourself with the hardware. You will be given two Kinect v2 sensors. They only work on USB 3.0, so you might need to check that you have 'reserved' the right lab machines (or your own laptops). Also, LiveScan3D is currently Windows only, I think.
 
+\subsection*{Iteration 2/3}
+My understanding is that the calibration process in LiveScan3D is a bit cumbersome. The idea is to use ArUco to simplify this, and also maybe even make it more accurate. Yes, you can use multiple markers, maybe even arranged on 3D objects like cubes. We can discuss details on Wednesday. A simplified calibration process would be important in the context of using something like LiveScan3D as a portable 3D recording tool.
+
+\subsection*{Iteration 4}
+You don't necessarily need to generate meshes from the recordings. You could keep it as a set of 3D points (probably stored in some efficient data structure). When doing playback, you simply render the points but should allow the virtual camera to change.
 \end{document}
