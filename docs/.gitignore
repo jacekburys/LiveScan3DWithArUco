@@ -1,5 +1,0 @@
-#ignore junk files from latex
-*.log
-*.aux
-*.pdf
-*.gz
