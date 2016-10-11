@@ -44,10 +44,10 @@
 
 \maketitle
 
-The intent of this project is to introduce an improvement on an open source real time 3D reconstruction library - LiveScan3D (https://github.com/MarekKowalski/LiveScan3D).
-LiveScan3D is a system designed for 3D reconstruction using multiple Kinect v2 depth sensors simultaneously at real time speed.
-This library contains code for calibration on the relative postitions of different sensors. However, this part is a bit cumbersome.
-The goal is to use another library ArUco (http://www.uco.es/investiga/grupos/ava/node/26) to simplify some of the calibration process. It's also possible to get it more accurate potentially.
+The intent of this project is to introduce an improvement on an open source real time 3D reconstruction library, LiveScan3D (https://github.com/MarekKowalski/LiveScan3D).
+LiveScan3D is a system designed for 3D reconstruction using multiple Kinect v2 depth sensors simultaneously in real time.
+This library contains code for calibration of the relative postitions of different sensors. However, this part is a bit cumbersome.
+The goal is to use another library, ArUco (http://www.uco.es/investiga/grupos/ava/node/26) to simplify, and potentually improve the accuracy of the calibration process. 
 
 \section*{Methods}
 For this project we have decided to follow the Extreme Programming (XP) agile method of development. The reasons for this are:
@@ -61,23 +61,22 @@ For this project we have decided to follow the Extreme Programming (XP) agile me
 \end{itemize}
 
 \section*{Planning}
-We plan to divide the work into parts that need to be completed with the hardware and parts that can be completed without. Any work that requires the Kinect sensors will need to be carried out on the appropriate lab machines and we plan to gather as a group to discuss and delegate this work. Some work will be able to be done without the sensors, thus giving us more flexibility when it comes to organising it, as group members can complete the work in their own time. \\
+We plan to divide the work into parts that need to be completed with the hardware and parts that can be completed without. Any work that requires the Kinect sensors will need to be carried out on the appropriate lab machines and we plan to gather as a group to discuss and delegate this work in frequent stand-up meetings. Some work will be able to be done without the sensors, thus giving us more flexibility when it comes to organising it, as group members can complete the work in their own time. \\
 
 TODO: talk about requirements and how we will capture those. \\
-Speaking to our supervisor gave us some insight into the scope of the project, the programming environments needed to carry out the work, as well as suggestions helping us to put together the iteration following plan:
-
-
-(What do we plan to demonstrate at the end of each iteration?)
+\\
+Speaking to our supervisor gave us some insight into the scope of the project, the programming environments needed to carry out the work, as well as suggestions that helped us put together the following iteration plan:
 
 \subsection*{Iteration 1}
-For the first iteration we plan to familiarise ourselves with the hardware which we will obtain from CSG; two Kinect v2 sensors. We will also read through code and understand the relevant sections of the LiveScan3D repository (and ArUco?) on github. There are some constraints with LiveScan3D as it only works on USB 3.0 and is currently restricted to Windows. To overcome these problems we will ...
-
+For the first iteration we plan to familiarise ourselves with the hardware obtained from CSG; two Kinect v2 sensors. We will also read through code and understand the relevant sections of the LiveScan3D and ArUco repositories on GitHub. There are some constraints with LiveScan3D as it only works on USB 3.0 and is currently restricted to Windows. To overcome these problems we will identify and build environments that can suitibly run the LiveScan3D software with the Kinect sensors, and work on these environments when needed. Not all work will require the hardware, and this work can be carried out on many more machines.
+\\
 Probably need to extend this section more
 
-Familiarize yourself with the hardware. You will be given two Kinect v2 sensors. They only work on USB 3.0, so you might need to check that you have 'reserved' the right lab machines (or your own laptops). Also, LiveScan3D is currently Windows only, I think.
+\subsection*{Iteration 2}
+The calibration process in LiveScan3D is currently a bit cumbersome. The idea is to use ArUco to simplify this, and also possibly make it more accurate. Yes, you can use multiple markers, maybe even arranged on 3D objects like cubes. We can discuss details on Wednesday. A simplified calibration process would be important in the context of using something like LiveScan3D as a portable 3D recording tool.
 
-\subsection*{Iteration 2/3}
-My understanding is that the calibration process in LiveScan3D is a bit cumbersome. The idea is to use ArUco to simplify this, and also maybe even make it more accurate. Yes, you can use multiple markers, maybe even arranged on 3D objects like cubes. We can discuss details on Wednesday. A simplified calibration process would be important in the context of using something like LiveScan3D as a portable 3D recording tool.
+\subsection*{Iteration 3}
+TODO
 
 \subsection*{Iteration 4}
 You don't necessarily need to generate meshes from the recordings. You could keep it as a set of 3D points (probably stored in some efficient data structure). When doing playback, you simply render the points but should allow the virtual camera to change.
