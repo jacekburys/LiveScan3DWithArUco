@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{report}
 \usepackage [utf8]{inputenc}
 \usepackage{listings}
 \usepackage{color}
@@ -67,7 +67,7 @@ could be used for more accurate calibration of LiveScan3D. We also have had
 initial ideas about placing the markers on a 3D object, for example a cube,
 and use it for calibration. \\
 
-In conclusion, we believe this project can contribute to LiveScan3D in terms of
+\noindent In conclusion, we believe this project can contribute to LiveScan3D in terms of
 it's modularity and potentially it's accuracy.
 
 \section*{Methods}
@@ -84,7 +84,7 @@ For this project we have decided to follow the Extreme Programming (XP) method o
 \section*{Planning}
 We plan to divide the work into parts that need to be completed with the hardware and parts that can be completed without. Any work that requires the Kinect sensors will need to be carried out on the appropriate lab machines and we plan to gather as a group to discuss and delegate this work in frequent stand-up meetings. Some work will be able to be done without the sensors, thus giving us more flexibility when it comes to organising it, as group members can complete the work in their own time. \\
 
-TODO: talk about requirements and how we will capture those. \\
+\noindent For requirement capture we will obtain user stories from our supervisor during our meetings which we will then plan what is required to fulfill these stories. We will also do formal requirement capture using the MoSCoW method which we can get signed off by our supervisor so that we have an agreed set of features to be implemented. \\
 \\
 Speaking to our supervisor gave us some insight into the scope of the project, the programming environments needed to carry out the work, as well as suggestions that helped us put together the following iteration plan:
 
@@ -100,9 +100,8 @@ The calibration process in LiveScan3D is currently a bit cumbersome. The idea is
 At this point we expect we will have a good understanding of both LiveScan3D and ArUco having read and understood the code. We will start implementing our changes by getting the calibration process to work with both sensors using one ArUco marker. A simplified calibration process is important in the context of using LiveScan3D as a portable 3D recording tool. If we have time at the end, we may try to make the calibration more accurate.  
 
 \subsection*{Iteration 3}
-When our calibration process works with one ArUco marker, we plan to try to experiment with the idea of placing multiple markers on a cube. \\
-// TODO : more text
+When our calibration process works with one ArUco marker, we plan to try to experiment with the idea of placing multiple markers on a cube. This will hopefully improve the calibration of LiveScan3D which we will test by comparing the difference in the output point cloud for one marker versus multiple markers.
 
 \subsection*{Iteration 4}
-In the final iteration we would like to complete an extension suggested by our supervisor. LiveScan3D can already record the objects and store them as a list of vertices in a PLY file. We would like to take this further and and an option in the application to extract meshes from the point cloud. This could give us 3D objects of better visual quality that can be opened and edited in third party applications. 
+In the final iteration we would like to complete an extension suggested by our supervisor. LiveScan3D can already record the objects and store them as a list of vertices in a PLY file. We would potentially like to take this further and add an option in the application to extract meshes from the point cloud. This could give us 3D objects of better visual quality that can be opened and edited in third party applications. 
 \end{document}
