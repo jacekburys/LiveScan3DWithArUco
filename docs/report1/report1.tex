@@ -87,16 +87,26 @@ TODO: talk about requirements and how we will capture those. \\
 Speaking to our supervisor gave us some insight into the scope of the project, the programming environments needed to carry out the work, as well as suggestions that helped us put together the following iteration plan:
 
 \subsection*{Iteration 1}
-For the first iteration we plan to familiarise ourselves with the hardware obtained from CSG; two Kinect v2 sensors. We will also read through code and understand the relevant sections of the LiveScan3D and ArUco repositories on GitHub. There are some constraints with LiveScan3D as it only works on USB 3.0 and is currently restricted to Windows. To overcome these problems we will identify and build environments that can suitibly run the LiveScan3D software with the Kinect sensors, and work on these environments when needed. Not all work will require the hardware, and this work can be carried out on many more machines.
+For the first iteration we plan to familiarise ourselves with the hardware obtained from CSG; two Kinect v2 sensors. We will also read through the code and understand the relevant sections of the LiveScan3D and ArUco repositories on GitHub. Both projects have demos that we will have to run to better understand how they work. We will then start experimenting with the code and figuring out where we could put our changes.
+There are some constraints with LiveScan3D as it only works on USB 3.0 and is currently restricted to Windows. To overcome these problems we will identify and build environments that can suitibly run the LiveScan3D software with the Kinect sensors, and work on these environments when needed. Not all work will require the hardware, and this work can be carried out on many more machines.
 \\
 Probably need to extend this section more
 
 \subsection*{Iteration 2}
+\iffalse
 The calibration process in LiveScan3D is currently a bit cumbersome. The idea is to use ArUco to simplify this, and also possibly make it more accurate. Yes, you can use multiple markers, maybe even arranged on 3D objects like cubes. We can discuss details on Wednesday. A simplified calibration process would be important in the context of using something like LiveScan3D as a portable 3D recording tool.
+\fi
+At this point we expect we will have good understanding of both LiveScan3D and ArUco. We will start implementing our changes and by the end of this iteration we hope we can complete the calibration process with one ArUco marker.  \\
+// TODO : more text
 
 \subsection*{Iteration 3}
-TODO
+When our calibration process works with one ArUco marker, we plan to try to experiment with the idea of placing multiple markers on a cube. \\
+// TODO : more text
 
 \subsection*{Iteration 4}
+\iffalse
 You don't necessarily need to generate meshes from the recordings. You could keep it as a set of 3D points (probably stored in some efficient data structure). When doing playback, you simply render the points but should allow the virtual camera to change.
+\fi
+In the final iteration we would like to complete an extension suggested by our supervisor. LiveScan3D can already record the objects and store them in PLY files. We would like to take this further and extract meshes from the point cloud. This could give us 3D objects of better quality and possibly reduce file sizes. \\
+// TODO : think about this, maybe it's too much
 \end{document}
