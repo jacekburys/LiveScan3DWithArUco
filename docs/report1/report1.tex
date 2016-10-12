@@ -69,14 +69,14 @@ and use it for calibration. \\
 // TODO: conclusion ?
 
 \section*{Methods}
-For this project we have decided to follow the Extreme Programming (XP) agile method of development. The reasons for this are:
+For this project we have decided to follow the Extreme Programming (XP) method of agile development. The reasons for this are:
 
 \begin{itemize}
-\item Extreme programming is split up into iterations which works well with the checkpoints we need to deliver throughout the project. We will do smaller iterations in between the project checkpoint cycles to ensure we are on track to meet the next larger checkpoint.
-\item Pair programming will be useful as well because we need to be working with the hardware which will be in labs so we can maximise the time we have with the hardware and work together rather than remotely.
+\item Extreme programming is split up into iterations which works well with the checkpoints we need to deliver throughout the project. We will schedule smaller iterations in between the project checkpoint cycles to ensure we are on track to meet the next larger checkpoint.
+\item Pair programming will also be useful because we need to be working with the hardware which will be in labs so we can maximise the time we have with the hardware and work together rather than remotely.
 \item Creating an open work space for extreme programming will be easier to achieve while doing pair programming as we will need to work with the Kinect camera hardware so we will likely be meeting to work together in labs for large portions of the project.
 \item Ensuring the customer is always available is also convenient for this project as our customer is our supervisor. We will do requirement capture via user stories from our supervisor in order to help guide the development and ensure all conditions are met.
-\item Daily stand-up meetings will be possible in since we are in university in order to keep track of progress within the project and ensure we are on track for delivering the requirements.
+\item Daily stand-up meetings will be possible while we are in university in order to keep track of progress within the project and ensure we are on track for delivering the requirements.
 \end{itemize}
 
 \section*{Planning}
@@ -104,9 +104,5 @@ When our calibration process works with one ArUco marker, we plan to try to expe
 // TODO : more text
 
 \subsection*{Iteration 4}
-\iffalse
-You don't necessarily need to generate meshes from the recordings. You could keep it as a set of 3D points (probably stored in some efficient data structure). When doing playback, you simply render the points but should allow the virtual camera to change.
-\fi
-In the final iteration we would like to complete an extension suggested by our supervisor. LiveScan3D can already record the objects and store them in PLY files. We would like to take this further and extract meshes from the point cloud. This could give us 3D objects of better quality and possibly reduce file sizes. \\
-// TODO : think about this, maybe it's too much
+In the final iteration we would like to complete an extension suggested by our supervisor. LiveScan3D can already record the objects and store them as a list of vertices in a PLY file. We would like to take this further and and an option in the application to extract meshes from the point cloud. This could give us 3D objects of better visual quality that can be opened and edited in third party applications. 
 \end{document}
