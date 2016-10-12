@@ -90,14 +90,12 @@ Speaking to our supervisor gave us some insight into the scope of the project, t
 For the first iteration we plan to familiarise ourselves with the hardware obtained from CSG; two Kinect v2 sensors. We will also read through the code and understand the relevant sections of the LiveScan3D and ArUco repositories on GitHub. Both projects have demos that we will have to run to better understand how they work. We will then start experimenting with the code and figuring out where we could put our changes.
 There are some constraints with LiveScan3D as it only works on USB 3.0 and is currently restricted to Windows. To overcome these problems we will identify and build environments that can suitibly run the LiveScan3D software with the Kinect sensors, and work on these environments when needed. Not all work will require the hardware, and this work can be carried out on many more machines.
 \\
-Probably need to extend this section more
 
 \subsection*{Iteration 2}
 \iffalse
 The calibration process in LiveScan3D is currently a bit cumbersome. The idea is to use ArUco to simplify this, and also possibly make it more accurate. Yes, you can use multiple markers, maybe even arranged on 3D objects like cubes. We can discuss details on Wednesday. A simplified calibration process would be important in the context of using something like LiveScan3D as a portable 3D recording tool.
 \fi
-At this point we expect we will have good understanding of both LiveScan3D and ArUco. We will start implementing our changes and by the end of this iteration we hope we can complete the calibration process with one ArUco marker.  \\
-// TODO : more text
+At this point we expect we will have a good understanding of both LiveScan3D and ArUco having read and understood the code. We will start implementing our changes by getting the calibration process to work with both sensors using one ArUco marker. A simplified calibration process is important in the context of using LiveScan3D as a portable 3D recording tool. If we have time at the end, we may try to make the calibration more accurate.  
 
 \subsection*{Iteration 3}
 When our calibration process works with one ArUco marker, we plan to try to experiment with the idea of placing multiple markers on a cube. \\
